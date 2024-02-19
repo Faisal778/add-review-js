@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Review</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <section class="flex flex-col justify-center items-center gap-y-2 mt-[10%]">
+        <div>Leave a review</div>
+        <div>
+          <textarea
+            id="review-textarea"
+            class="textarea textarea-primary sm:min-w-[500px] min-h-[200px]"
+            placeholder="Bio"
+          ></textarea>
+        </div>
+        <div>
+          <button id="review-btn" class="btn btn-wide text-black bg-blue-300">Submit</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="text-center text-2xl mt-6 text-blue-500 mb-4">User Reviews</div>
+
+        <div id="review" class="grid sm:grid-cols-2 max-w-[85%] mx-auto text-center gap-4"></div>
+      </section>
+    </main>
+
+    <script src="review.js"></script>
+  </body>
+</html>
